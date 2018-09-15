@@ -1,0 +1,118 @@
+/*
+USAGE:
+@include keyframes(slide-down) {
+  0% { opacity: 1; }
+  90% { opacity: 0; }
+}
+*/
+/*
+USAGE:
+@include animation('slide-down 5s 3');
+*/
+/*
+USAGE:
+@include animation-with-fill-mode(fadeOutLeft, .5s, both);
+*/
+@font-face {
+  font-family: 'xui-alert-icomoon';
+  src: url("fonts/xui-alert-icomoon.ttf") format("truetype"), url("fonts/xui-alert-icomoon.woff") format("woff"), url("fonts/xui-alert-icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="xui-alert-icomoon-"], [class*=" xui-alert-icomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'xui-alert-icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.xui-alert-icomoon-cancel:before {
+  content: "\e5c9"; }
+
+.xui-alert-icomoon-check:before {
+  content: "\e5ca"; }
+
+.xui-alert-icomoon-check_circle:before {
+  content: "\e86c"; }
+
+.xui-alert-icomoon-close:before {
+  content: "\e5cd"; }
+
+.xui-alert-icomoon-do_not_disturb_alt:before {
+  content: "\e611"; }
+
+.xui-alert-icomoon-error2:before {
+  content: "\e000"; }
+
+.xui-alert-icomoon-error_outline:before {
+  content: "\e001"; }
+
+.xui-alert-icomoon-help:before {
+  content: "\e887"; }
+
+.xui-alert-icomoon-help_outline:before {
+  content: "\e8fd"; }
+
+.xui-alert-icomoon-info:before {
+  content: "\e88e"; }
+
+.xui-alert-icomoon-info_outline:before {
+  content: "\e88f"; }
+
+.xui-alert span.xui-alert-icon-success:before, .xui-alert .xui-alert-btn-close:before {
+  font-family: 'xui-alert-icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.xui-alert span.xui-alert-icon-success {
+  padding-right: 1rem;
+  display: inline-block;
+  height: 40px;
+  display: inline-flex;
+  align-items: center; }
+  .xui-alert span.xui-alert-icon-success:before {
+    font-size: 24px; }
+
+.xui-alert {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  position: relative; }
+  .xui-alert p {
+    margin: 0;
+    align-self: center;
+    flex-grow: 1; }
+  .xui-alert h1, .xui-alert h2, .xui-alert h3, .xui-alert h4, .xui-alert h5, .xui-alert h6 {
+    margin-top: 0px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    flex: 1 0 100%; }
+  .xui-alert span.xui-alert-icon-success:before {
+    content: "\e86c"; }
+  .xui-alert .xui-alert-btn-close {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 34px;
+    width: 34px;
+    font-size: 18px;
+    padding: 0px;
+    cursor: pointer; }
+    .xui-alert .xui-alert-btn-close:before {
+      content: "\e5cd"; }

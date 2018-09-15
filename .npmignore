@@ -1,0 +1,7 @@
+config/
+.gitattributes
+.gitignore
+Gruntfile.js
+tsconfig.json
+dev/
+scripts/

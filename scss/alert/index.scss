@@ -1,0 +1,120 @@
+@import "../mixins";
+@import "./icomoon/style";
+
+$xui-alert-icon-top: 12px;
+$xui-alert-icon-left: 14px;
+$xui-alert-padding-size: 1rem;
+
+
+%font-icon-shared {
+  font-family: 'xui-alert-icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+%icon-shared {
+  padding-right: $xui-alert-padding-size;
+  // position: relative;
+  display: inline-block;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  // padding-left: 3rem;
+  &:before {
+    @extend %font-icon-shared;
+    // position: absolute;
+    // top: 0px;
+    // left: 0px;
+    font-size: 24px;
+  }
+}
+
+
+.xui-alert {
+  display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: column;
+  align-items: flex-start;
+  background-color: #ccc;
+  padding: $xui-alert-padding-size;
+  margin-bottom: $xui-alert-padding-size;
+  border-radius: 4px;
+  position: relative;
+
+  p {
+    margin: 0;
+    align-self: center;
+    flex-grow: 1;
+    // flex: 1 0 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    font-size: 1rem;
+    margin-bottom: $xui-alert-padding-size / 2;
+    flex: 1 0 100%;
+  }
+
+  span.xui-alert-icon-success {
+    @extend %icon-shared;
+    &:before {
+      content: "\e86c";
+    }
+  }
+
+  // &.xui-alert-show-icon {
+  //   @extend %icon-shared;
+  // }
+
+  // &.xui-alert-success.xui-alert-show-icon {
+  //   &:before {
+  //     content: "\e86c";
+  //   }
+  // }
+
+  // &.xui-alert-danger.xui-alert-show-icon {
+  //   &:before {
+  //     content: "\e5c9";
+  //   }
+  // }
+
+  // &.xui-alert-warning.xui-alert-show-icon {
+  //   &:before {
+  //     content: "\e000";
+  //   }
+  // }
+
+  // &.xui-alert-info.xui-alert-show-icon {
+  //   &:before {
+  //     content: "\e88e";
+  //   }
+  // }
+
+  &.xui-alert-close {
+    // padding-right: 3rem;
+  }
+
+  .xui-alert-btn-close {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 34px;
+    // line-height: 34px;
+    width: 34px;
+    font-size: 18px;
+    padding: 0px;
+    cursor: pointer;
+    &:before {
+      @extend %font-icon-shared;
+      content: "\e5cd";
+    }
+  }
+}
