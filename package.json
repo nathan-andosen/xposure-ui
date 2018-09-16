@@ -23,6 +23,7 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "@thenja/concat-scss": "^1.0.0",
     "cssnano": "3.9.1",
     "grunt": "1.0.3",
     "grunt-cli": "1.2.0",

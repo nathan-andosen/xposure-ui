@@ -1,5 +1,5 @@
 @import "../mixins";
-@import "./icomoon/style";
+@import "./icon-fonts";
 
 $xui-alert-icon-top: 12px;
 $xui-alert-icon-left: 14px;
@@ -7,7 +7,7 @@ $xui-alert-padding-size: 1rem;
 
 
 %font-icon-shared {
-  font-family: 'xui-alert-icomoon' !important;
+  font-family: 'xui-alert-' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -38,9 +38,10 @@ $xui-alert-padding-size: 1rem;
 
 .xui-alert {
   display: flex;
+  // align-self: stretch;
   // flex-wrap: wrap;
   // flex-direction: column;
-  align-items: flex-start;
+  // align-items: flex-start;
   background-color: #ccc;
   padding: $xui-alert-padding-size;
   margin-bottom: $xui-alert-padding-size;
@@ -60,6 +61,27 @@ $xui-alert-padding-size: 1rem;
     margin-bottom: $xui-alert-padding-size / 2;
     flex: 1 0 100%;
   }
+
+  &.xui-alert-icon {
+    // padding-left: 45px;
+    &:before {
+      // position: absolute;
+      // left: 0px;
+      padding-right: 15px;
+    }
+    
+  }
+
+  &.xui-alert-success {
+    &.xui-alert-icon {
+      
+      &:before {
+        @extend %font-icon-shared;
+        content: "\e86c";
+      }
+    }
+  }
+  
 
   span.xui-alert-icon-success {
     @extend %icon-shared;
