@@ -1,0 +1,55 @@
+/*
+USAGE:
+@include keyframes(slide-down) {
+  0% { opacity: 1; }
+  90% { opacity: 0; }
+}
+*/
+/*
+USAGE:
+@include animation('slide-down 5s 3');
+*/
+/*
+USAGE:
+@include animation-with-fill-mode(fadeOutLeft, .5s, both);
+*/
+.xui-loading-spinner {
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  font-size: 24px;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  border-radius: .5em;
+  box-sizing: border-box;
+  -webkit-animation: spin 0.9s linear infinite;
+  -moz-animation: spin 0.9s linear infinite;
+  animation: spin 0.9s linear infinite;
+  border-top-color: #ff9900; }
+  .xui-loading-spinner.xui-loading-spinner-block {
+    display: block;
+    margin: 10px auto; }
+  .xui-loading-spinner.xui-loading-spinner-sml {
+    font-size: 14px;
+    border-width: 2px; }
+  .xui-loading-spinner.xui-loading-spinner-lrg {
+    font-size: 34px;
+    border-width: 3px; }
+  .xui-loading-spinner.xui-loading-spinner-xlrg {
+    font-size: 44px;
+    border-width: 3px; }
+
+@-webkit-keyframes spin {
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  to {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }

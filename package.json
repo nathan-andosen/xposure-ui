@@ -6,10 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-tap": "rollup -c ./config/vue-directives/tap.rollup.js",
-    "build-loading-spinner": "grunt --gruntfile ./config/scss/loading-spinner.grunt.js build",
-    "dev-loading-spinner": "grunt --gruntfile ./config/scss/loading-spinner.grunt.js dev",
-    "build-alert": "bash ./scripts/build-alert.sh",
-    "dev-alert": "grunt --gruntfile ./config/scss/alert.grunt.js dev"
+    "build": "bash ./scripts/build.sh",
+    "dev-alert": "grunt --gruntfile ./config/scss/alert.grunt.js dev",
+    "dev-loading-spinner": "grunt --gruntfile ./config/scss/loading-spinner.grunt.js dev"
   },
   "repository": {
     "type": "git",

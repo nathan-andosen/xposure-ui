@@ -1,9 +1,7 @@
 @font-face {
   font-family: 'xui-alert';
   src:
-    url('fonts/xui-alert.ttf?cadn2z') format('truetype'),
-    url('fonts/xui-alert.woff?cadn2z') format('woff'),
-    url('fonts/xui-alert.svg?cadn2z#xui-alert') format('svg');
+    url('fonts/xui-alert.ttf?3f10y6') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,42 +24,15 @@
 .xui-icon-alert-cancel:before {
   content: "\e5c9";
 }
-.xui-icon-alert-check:before {
-  content: "\e5ca";
-}
 .xui-icon-alert-check_circle:before {
   content: "\e86c";
 }
 .xui-icon-alert-close:before {
   content: "\e5cd";
 }
-.xui-icon-alert-do_not_disturb_alt:before {
-  content: "\e611";
-}
 .xui-icon-alert-error2:before {
   content: "\e000";
 }
-.xui-icon-alert-error_outline:before {
-  content: "\e001";
-}
-.xui-icon-alert-help:before {
-  content: "\e887";
-}
-.xui-icon-alert-help_outline:before {
-  content: "\e8fd";
-}
 .xui-icon-alert-info:before {
   content: "\e88e";
-}
-.xui-icon-alert-info_outline:before {
-  content: "\e88f";
-}
-.xui-icon-alert-change_history:before {
-  content: "\e86b";
-}
-.xui-icon-alert-highlight_off:before {
-  content: "\e888";
-}
-.xui-icon-alert-remove_circle_outline:before {
-  content: "\e15d";
 }

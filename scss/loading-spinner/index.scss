@@ -1,0 +1,45 @@
+@import "../mixins";
+@import "./variables";
+
+.xui-loading-spinner {
+  border: #{$xui-loading-spinner-border-size} solid #{$xui-loading-spinner-background-color};
+  font-size: $xui-loading-spinner-size;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  border-radius: .5em;
+  box-sizing: border-box;
+  -webkit-animation: spin #{$xui-loading-spinner-speed} linear infinite;
+  -moz-animation: spin #{$xui-loading-spinner-speed}  linear infinite;
+  animation: spin #{$xui-loading-spinner-speed}  linear infinite;
+  border-top-color: $xui-loading-spinner-foreground-color;
+  &.xui-loading-spinner-block {
+    display: block;
+    margin: 10px auto;
+  }
+ 
+  &.xui-loading-spinner-sml {
+    font-size: $xui-loading-spinner-size-sml;
+    border-width: $xui-loading-spinner-border-size-sml;
+  }
+  &.xui-loading-spinner-lrg {
+    font-size: $xui-loading-spinner-size-lrg;
+    border-width: $xui-loading-spinner-border-size-lrg;
+  }
+  &.xui-loading-spinner-xlrg {
+    font-size: $xui-loading-spinner-size-xlrg;
+    border-width: $xui-loading-spinner-border-size-xlrg;
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+
+@keyframes spin {
+  to {
+    @include transform(rotate(360deg));
+  }
+}
