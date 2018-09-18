@@ -1,18 +1,3 @@
-/*
-USAGE:
-@include keyframes(slide-down) {
-  0% { opacity: 1; }
-  90% { opacity: 0; }
-}
-*/
-/*
-USAGE:
-@include animation('slide-down 5s 3');
-*/
-/*
-USAGE:
-@include animation-with-fill-mode(fadeOutLeft, .5s, both);
-*/
 .xui-loading-spinner {
   border: 2px solid rgba(0, 0, 0, 0.05);
   font-size: 24px;
@@ -24,7 +9,7 @@ USAGE:
   -webkit-animation: spin 0.9s linear infinite;
   -moz-animation: spin 0.9s linear infinite;
   animation: spin 0.9s linear infinite;
-  border-top-color: #ff9900; }
+  border-top-color: #9BC4BC; }
   .xui-loading-spinner.xui-loading-spinner-block {
     display: block;
     margin: 10px auto; }
