@@ -1,13 +1,9 @@
 @import "../mixins";
 @import "./icon-fonts";
-
-$xui-alert-icon-top: 12px;
-$xui-alert-icon-left: 14px;
-$xui-alert-padding-size: 1rem;
-
+@import "./variables";
 
 %font-icon-shared {
-  font-family: 'xui-alert-' !important;
+  font-family: 'xui-alert' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -15,128 +11,104 @@ $xui-alert-padding-size: 1rem;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
 }
-
-
-%icon-shared {
-  padding-right: $xui-alert-padding-size;
-  // position: relative;
-  display: inline-block;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  // padding-left: 3rem;
-  &:before {
-    @extend %font-icon-shared;
-    // position: absolute;
-    // top: 0px;
-    // left: 0px;
-    font-size: 24px;
-  }
-}
-
 
 .xui-alert {
-  display: flex;
-  // align-self: stretch;
-  // flex-wrap: wrap;
-  // flex-direction: column;
-  // align-items: flex-start;
-  background-color: #ccc;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
   padding: $xui-alert-padding-size;
+  padding-right: 48px;
   margin-bottom: $xui-alert-padding-size;
-  border-radius: 4px;
+  border-radius: $xui-alert-border-radius;
   position: relative;
 
   p {
     margin: 0;
-    align-self: center;
-    flex-grow: 1;
-    // flex: 1 0 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
-    font-size: 1rem;
     margin-bottom: $xui-alert-padding-size / 2;
-    flex: 1 0 100%;
   }
 
   &.xui-alert-icon {
-    // padding-left: 45px;
+    padding-left: $xui-alert-padding-size + 40;
     &:before {
-      // position: absolute;
-      // left: 0px;
-      padding-right: 15px;
+      @extend %font-icon-shared;
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      margin-top: -12px;
     }
-    
   }
 
   &.xui-alert-success {
+    background-color: $xui-alert-success-bg-color;
+    border-color: $xui-alert-success-border-color;
+    color: $xui-alert-success-text-color;
     &.xui-alert-icon {
-      
       &:before {
-        @extend %font-icon-shared;
         content: "\e86c";
       }
     }
   }
-  
 
-  span.xui-alert-icon-success {
-    @extend %icon-shared;
-    &:before {
-      content: "\e86c";
+  &.xui-alert-info {
+    background-color: $xui-alert-info-bg-color;
+    border-color: $xui-alert-info-border-color;
+    color: $xui-alert-info-text-color;
+    &.xui-alert-icon {
+      &:before {
+        content: "\e88e";
+      }
     }
   }
 
-  // &.xui-alert-show-icon {
-  //   @extend %icon-shared;
-  // }
-
-  // &.xui-alert-success.xui-alert-show-icon {
-  //   &:before {
-  //     content: "\e86c";
-  //   }
-  // }
-
-  // &.xui-alert-danger.xui-alert-show-icon {
-  //   &:before {
-  //     content: "\e5c9";
-  //   }
-  // }
-
-  // &.xui-alert-warning.xui-alert-show-icon {
-  //   &:before {
-  //     content: "\e000";
-  //   }
-  // }
-
-  // &.xui-alert-info.xui-alert-show-icon {
-  //   &:before {
-  //     content: "\e88e";
-  //   }
-  // }
-
-  &.xui-alert-close {
-    // padding-right: 3rem;
+  &.xui-alert-warning {
+    background-color: $xui-alert-warning-bg-color;
+    border-color: $xui-alert-warning-border-color;
+    color: $xui-alert-warning-text-color;
+    &.xui-alert-icon {
+      &:before {
+        content: "\e000";
+      }
+    }
   }
 
-  .xui-alert-btn-close {
+  &.xui-alert-danger {
+    background-color: $xui-alert-danger-bg-color;
+    border-color: $xui-alert-danger-border-color;
+    color: $xui-alert-danger-text-color;
+    &.xui-alert-icon {
+      &:before {
+        content: "\e5c9";
+      }
+    }
+  }
+
+  .xui-alert-close {
     border: none;
     background-color: transparent;
+    text-align: center;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 8px;
+    right: 8px;
     height: 34px;
-    // line-height: 34px;
+    line-height: 38px;
     width: 34px;
     font-size: 18px;
     padding: 0px;
     cursor: pointer;
+    color: #000;
+    opacity: 0.2;
     &:before {
       @extend %font-icon-shared;
+      font-size: 20px;
       content: "\e5cd";
+    }
+    &:hover {
+      opacity: 0.5;
     }
   }
 }

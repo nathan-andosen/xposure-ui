@@ -25,7 +25,7 @@
         "name": "cancel"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 0
     },
     {
@@ -52,7 +52,7 @@
         "name": "check"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 1
     },
     {
@@ -79,7 +79,7 @@
         "name": "check_circle"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 2
     },
     {
@@ -106,7 +106,7 @@
         "name": "close"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 3
     },
     {
@@ -133,7 +133,7 @@
         "name": "do_not_disturb_alt"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 4
     },
     {
@@ -160,7 +160,7 @@
         "name": "error2"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 5
     },
     {
@@ -187,7 +187,7 @@
         "name": "error_outline"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 6
     },
     {
@@ -214,7 +214,7 @@
         "name": "help"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 7
     },
     {
@@ -241,7 +241,7 @@
         "name": "help_outline"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 8
     },
     {
@@ -268,7 +268,7 @@
         "name": "info"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 9
     },
     {
@@ -295,7 +295,7 @@
         "name": "info_outline"
       },
       "setIdx": 0,
-      "setId": 9,
+      "setId": 5,
       "iconIdx": 10
     },
     {
@@ -315,15 +315,15 @@
       "attrs": [],
       "properties": {
         "ligatures": "change_history",
-        "id": 144,
+        "id": 11,
         "order": 33,
         "prevSize": 24,
         "code": 59499,
         "name": "change_history"
       },
-      "setIdx": 5,
-      "setId": 4,
-      "iconIdx": 144
+      "setIdx": 0,
+      "setId": 5,
+      "iconIdx": 11
     },
     {
       "icon": {
@@ -342,15 +342,15 @@
       "attrs": [],
       "properties": {
         "ligatures": "highlight_off",
-        "id": 384,
+        "id": 12,
         "order": 31,
         "prevSize": 24,
         "code": 59528,
         "name": "highlight_off"
       },
-      "setIdx": 5,
-      "setId": 4,
-      "iconIdx": 384
+      "setIdx": 0,
+      "setId": 5,
+      "iconIdx": 12
     },
     {
       "icon": {
@@ -369,20 +369,20 @@
       "attrs": [],
       "properties": {
         "ligatures": "remove_circle_outline",
-        "id": 618,
+        "id": 13,
         "order": 30,
         "prevSize": 24,
         "code": 57693,
         "name": "remove_circle_outline"
       },
-      "setIdx": 5,
-      "setId": 4,
-      "iconIdx": 618
+      "setIdx": 0,
+      "setId": 5,
+      "iconIdx": 13
     }
   ],
   "height": 1024,
   "metadata": {
-    "name": "xui-alert-"
+    "name": "xui-alert"
   },
   "preferences": {
     "showGlyphs": true,
@@ -390,9 +390,9 @@
     "showQuickUse2": true,
     "showSVGs": true,
     "fontPref": {
-      "prefix": "xui-alert-",
+      "prefix": "xui-icon-alert-",
       "metadata": {
-        "fontFamily": "xui-alert-",
+        "fontFamily": "xui-alert",
         "majorVersion": 1,
         "minorVersion": 0
       },

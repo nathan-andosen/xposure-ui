@@ -8,68 +8,42 @@
 
 <body>
     <h1>Alert</h1>
-
-    <div class="xui-alert xui-alert-success">
-      <p>This is a simple alert!</p>
-    </div>
-    <div class="xui-alert xui-alert-success">
-      This alert does not use p tags
-    </div>
-    <div class="xui-alert xui-alert-success xui-alert-icon">
-      This alert as an icon
-    </div>
-
-    <br><br>
-
-
-    <div class="xui-alert xui-alert-success xui-alert-close">
-      <span class="xui-alert-icon-success"></span>
-      <p>This alert has an icon</p>
-      <button class="xui-alert-btn-close"></button>
-    </div>
-    <div class="xui-alert xui-alert-success xui-alert-close">
-        <span class="xui-alert-icon-success"></span>
-        <p>This alert has an icon. This alert has an icon. 
-            This alert has an icon. This alert has an icon
-        </p>
-        <button class="xui-alert-btn-close"></button>
+    <div class="xui-alert">
+        No style alert
+        <button class="xui-alert-close"></button>
       </div>
-    <div class="xui-alert xui-alert-success xui-alert-show-icon">
-        <span class="xui-alert-icon-success"></span>
-      <p >This alert has an icon</p>
-      <p>This alert has an icon</p>
-      <p>This alert has an icon</p>
-      <p>This alert has an icon</p>
+    <div class="xui-alert xui-alert-success xui-alert-icon">
+      Success alert with icon and close button
+      <button class="xui-alert-close"></button>
     </div>
-    <div class="xui-alert xui-alert-success xui-alert-close">
-      <h3>Heading here</h3>
-      <p>This is a simple alert!</p>
-      <button class="xui-alert-btn-close"></button>
+    <div class="xui-alert xui-alert-info xui-alert-icon">
+      Info alert with icon and close button
+      <a class="xui-alert-close"></a>
     </div>
-    <div class="xui-alert xui-alert-success xui-alert-show-icon xui-alert-close">
-      <h3>Heading here</h3>
-      <p>This is a simple alert!</p>
-      <button class="xui-alert-btn-close"></button>
+    <div class="xui-alert xui-alert-warning xui-alert-icon">
+      Warning alert with icon and close button
+      <button class="xui-alert-close"></button>
     </div>
-    <div class="xui-alert xui-alert-success xui-alert-show-icon xui-alert-close">
-      <p>This alert has an icon</p>
-      <button class="xui-alert-btn-close"></button>
+    <div class="xui-alert xui-alert-danger xui-alert-icon">
+      Danger alert with icon and close button
+      <button class="xui-alert-close"></button>
     </div>
-
-    <div class="xui-alert xui-alert-danger xui-alert-show-icon xui-alert-close">
-      <h3>Danger alert</h3>
-      <p>This is a simple alert!</p>
-      <button class="xui-alert-btn-close"></button>
+    <div class="xui-alert xui-alert-info">
+      <h2>Information!</h2>
+      <p>This alert has a header and some information.</p>
     </div>
-    <div class="xui-alert xui-alert-warning xui-alert-show-icon xui-alert-close">
-      <h3>Warning alert</h3>
-      <p>This is a simple alert!</p>
-      <button class="xui-alert-btn-close"></button>
-    </div>
-    <div class="xui-alert xui-alert-info xui-alert-show-icon xui-alert-close">
-      <h3>Info alert</h3>
-      <p>This is a simple alert!</p>
-      <button class="xui-alert-btn-close"></button>
+    <br><br>
+    <h2>Alerts with bigger font sizes:</h2>
+    <div style="font-size: 1.4rem;">
+      <div class="xui-alert xui-alert-danger xui-alert-icon">
+        Danger alert with icon and close button
+        <button class="xui-alert-close"></button>
+      </div>
+      <div class="xui-alert xui-alert-success">
+        <h2>Heading here</h2>
+        Success alert with icon and close button
+        <button class="xui-alert-close"></button>
+      </div>
     </div>
 </body>
 </html>

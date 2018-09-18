@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'xui-alert-';
+  font-family: 'xui-alert';
   src:
-    url('fonts/xui-alert-.ttf?exvd5t') format('truetype'),
-    url('fonts/xui-alert-.woff?exvd5t') format('woff'),
-    url('fonts/xui-alert-.svg?exvd5t#xui-alert-') format('svg');
+    url('fonts/xui-alert.ttf?cadn2z') format('truetype'),
+    url('fonts/xui-alert.woff?cadn2z') format('woff'),
+    url('fonts/xui-alert.svg?cadn2z#xui-alert') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="xui-alert-"], [class*=" xui-alert-"] {
+[class^="xui-icon-alert-"], [class*=" xui-icon-alert-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'xui-alert-' !important;
+  font-family: 'xui-alert' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -23,45 +23,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.xui-alert-cancel:before {
+.xui-icon-alert-cancel:before {
   content: "\e5c9";
 }
-.xui-alert-check:before {
+.xui-icon-alert-check:before {
   content: "\e5ca";
 }
-.xui-alert-check_circle:before {
+.xui-icon-alert-check_circle:before {
   content: "\e86c";
 }
-.xui-alert-close:before {
+.xui-icon-alert-close:before {
   content: "\e5cd";
 }
-.xui-alert-do_not_disturb_alt:before {
+.xui-icon-alert-do_not_disturb_alt:before {
   content: "\e611";
 }
-.xui-alert-error2:before {
+.xui-icon-alert-error2:before {
   content: "\e000";
 }
-.xui-alert-error_outline:before {
+.xui-icon-alert-error_outline:before {
   content: "\e001";
 }
-.xui-alert-help:before {
+.xui-icon-alert-help:before {
   content: "\e887";
 }
-.xui-alert-help_outline:before {
+.xui-icon-alert-help_outline:before {
   content: "\e8fd";
 }
-.xui-alert-info:before {
+.xui-icon-alert-info:before {
   content: "\e88e";
 }
-.xui-alert-info_outline:before {
+.xui-icon-alert-info_outline:before {
   content: "\e88f";
 }
-.xui-alert-change_history:before {
+.xui-icon-alert-change_history:before {
   content: "\e86b";
 }
-.xui-alert-highlight_off:before {
+.xui-icon-alert-highlight_off:before {
   content: "\e888";
 }
-.xui-alert-remove_circle_outline:before {
+.xui-icon-alert-remove_circle_outline:before {
   content: "\e15d";
 }
