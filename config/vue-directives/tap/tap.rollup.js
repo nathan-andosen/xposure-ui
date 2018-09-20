@@ -4,7 +4,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import buble from 'rollup-plugin-buble';
 
 let buildEsm = {
-  input: './vue/directives/tap/index.ts',
+  input: './vue/directives/tap/tap-directive.ts',
   output: {
     file: './vue/directives/tap/index.js',
     format: 'esm',
@@ -26,7 +26,7 @@ let buildEsm = {
 };
 
 let buildBundle = {
-  input: './vue/directives/tap/index.ts',
+  input: './vue/directives/tap/tap-directive.ts',
   output: {
     file: './vue/directives/tap/index.bundle.js',
     format: 'umd',
