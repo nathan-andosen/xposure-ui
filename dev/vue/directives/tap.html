@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Xposure VueJs Tap Directive</title>
+  <script src="../../../node_modules/vue/dist/vue.js"></script>
+  <script src="../../../vue/directives/tap/index.bundle.js"></script>
+</head>
+
+<body>
+    <h1>Vue Tap</h1>
+    <div id="app">
+      {{ message }}
+      <button v-tap="handleTapOne">
+        Tap One Test
+      </button>
+      <button v-tap='{ cb: handleTapTwo, params: { one: "abc", two: message } }'>
+        Tap Two Test
+      </button>
+    </div>
+
+    <script>
+      Vue.directive('tap', XuiTapDirective);
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue!'
+        },
+        methods: {
+          handleTapOne: function() {
+            console.log('tap one fired...');
+          },
+          handleTapTwo: function(ev, params) {
+            console.log('tap two fired...', params);
+          }
+        }
+      });
+    </script>
+</body>
+</html>

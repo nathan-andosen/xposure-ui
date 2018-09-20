@@ -1,6 +1,6 @@
 import Hammer from 'hammerjs';
 
-var TapDirective = {
+var XuiTapDirective = {
     bind: function (el, binding, vnode) {
         // cancel the click event
         el.addEventListener('click', function (ev) {
@@ -25,7 +25,7 @@ var TapDirective = {
                     if (binding.value.cb) {
                         var arr = [ev];
                         for (var key in binding.value) {
-                            if (key.indexOf('param') > -1) {
+                            if (key.indexOf('params') > -1) {
                                 arr.push(binding.value[key]);
                             }
                         }
@@ -40,4 +40,4 @@ var TapDirective = {
     }
 };
 
-export default TapDirective;
+export default XuiTapDirective;

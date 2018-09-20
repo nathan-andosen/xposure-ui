@@ -1,7 +1,7 @@
 import { DirectiveOptions } from 'vue';
 import Hammer from 'hammerjs';
 
-const TapDirective: DirectiveOptions = {
+const XuiTapDirective: DirectiveOptions = {
 bind: (el: HTMLElement, binding: any, vnode) => {
     // cancel the click event
     el.addEventListener('click', (ev: Event) => {
@@ -25,7 +25,7 @@ bind: (el: HTMLElement, binding: any, vnode) => {
           if(binding.value.cb) {
             let arr: any[] = [ev];
             for(let key in binding.value) {
-              if(key.indexOf('param') > -1) {
+              if(key.indexOf('params') > -1) {
                 arr.push(binding.value[key]);
               }
             }
@@ -39,4 +39,4 @@ bind: (el: HTMLElement, binding: any, vnode) => {
   }
 };
 
-export default TapDirective;
+export default XuiTapDirective;
